@@ -29,6 +29,14 @@ $("#q1true").on("click", function answers() {
 //   }
 })
 
+$("#qfalse").on("click", function answers() {
+  // if (question1 === false) {
+  //   wins++;
+  //   $("#correct").text(correct); 
+    console.log(this.value);
+
+})
+
   //question1.userproperty
   //assign this.value to that property(key) if question1.userPropert === question1.correctAnswer correct++
     //each question will be an object itself, have question id, correct answer, user guess=0
