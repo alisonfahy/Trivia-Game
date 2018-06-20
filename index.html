@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Violin Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js" defer></script>
+    
+    
+</head>
+
+<body>
+
+    <!-- Main Title: Violin Trivia Game! -->
+    <header>
+        <h1> Violin Trivia Game! </h1>
+        <p> Click play to begin</p>
+    </header>
+
+    <!-- Play Button -->
+    <button type="button" id="playButton" class="btn-lg">Play!</button>
+
+  
+    <!-- Container -->
+<div class="container">
+        
+    <!-- Timer -->
+    <div class="row">
+            <div class="col-md-12">
+                <p id="timer">Time Remaining: 00 seconds</p>
+            </div>
+            <!-- <div class="col-md-6">
+            </div> -->
+        </div>
+
+        <!-- Questions -->
+        <div class="row">
+            <div class="col-md-12">
+                <p><b>True or False?</b></p>
+                <p> 1. The violin has 6 strings.
+                    <span id="question1"></span>
+                    <button type="button" value="true" id="q1true" class="btn-sm">True</button>
+                     
+                    <button type="button" value="false" id="q1false" class="btn-sm">False</button>
+                     
+                </p>
+                <p> 2. Your chin goes on the chinrest.
+                    <span id="question2"></span>
+                    <button type="button" class="btn-sm">True</button>
+                    <span id="q2true"></span>
+                    <button type="button" class="btn-sm">False</button>
+                    <span id="q2false"></span>
+                </p>
+                <p> 3. "E" is the highest string.
+                    <span id="question3"></span>
+                    <button type="button" class="btn-sm">True</button>
+                    <span id="q3true"></span>
+                    <button type="button" class="btn-sm">False</button>
+                    <span id="q3false"></span>
+                </p>
+                <p> 4. The bowhair comes from a llama.
+                    <span id="question4"></span>
+                    <button type="button" class="btn-sm">True</button>
+                    <span id="q4true"></span>
+                    <button type="button" class="btn-sm">False</button>
+                    <span id="q4false"></span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Wins and Losses -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>Correct answers:
+                    <span id="correct"></span>
+                </p>
+                <p>Incorrect answers:
+                    <span id="inCorrect"></span>
+                </p>
+                <p>Unanswered:
+                    <span id="unAnswered"></span> 
+                        <!-- decrement -->
+                </p>
+            </div>
+        </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    height: 100%; 
+    background-image: url(../images/violin.jpg);;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: left;
+    font-size: 1.5em;
+    font-style: italic;
+    color: black;
+    line-height: 1%;
+}
+
+.container {
+    float: right;
+    background-color: antiquewhite;
+    width: 500px;
+    border: double goldenrod;
+    margin-top: 100px;
+}
+
+#timer {
+    background-color: bisque;
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+}
+
+#playButton {
+    background-color: brown;
+    width: 100px;
+    height: 75px;
+    font-size: 18pt;
+    font-family: cursive;
+    margin-top: 20px;
+}
