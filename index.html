@@ -43,37 +43,45 @@
         </div>
 
         <!-- Questions -->
-        <div class="row">
+        <div class="row questions">
             <div class="col-md-12">
                 <p>
                     <b>True or False?</b>
                 </p>
-        
+                
                 <div class="question1">
                     <p> 1. The violin has 6 strings.
-                        <button type="button" value="true" id="q1true" class="btn-sm">True</button>
-                        <button type="button" value="false" id="q1false" class="btn-sm">False</button>
+                        <form>
+                            <input type="radio" name="blue" id="q1true" value="true"> True<br>
+                            <input type="radio" name="blue" id="q1false" value="false"> False<br>
+                          </form> 
                     </p>
                 </div>
         
                 <div class="question2">
                     <p> 2. Your chin goes on the chinrest.
-                        <button type="button" value="true" id="q2true" class="btn-sm">True</button>
-                        <button type="button" value="false" id="q2false" class="btn-sm">False</button>
+                        <form>
+                            <input type="radio" name="red" id="q2true" value="true"> True<br>
+                            <input type="radio" name="red" id="q2false" value="false"> False<br>
+                          </form> 
                     </p>
                 </div>
         
                 <div class="question3">
                     <p> 3. "E" is the highest string.
-                        <button type="button" value="true" id="q3true" class="btn-sm">True</button>
-                        <button type="button" value="false" id="q3false" class="btn-sm">False</button>
+                        <form>
+                            <input type="radio" name="green" id="q3true" value="true"> True<br>
+                            <input type="radio" name="green" id="q3false" value="false"> False<br>
+                          </form> 
                     </p>
                 </div>
         
                 <div class="question4">
                     <p> 4. The bowhair comes from a llama.
-                        <button type="button" value="true" id="q4true" class="btn-sm">True</button>
-                        <button type="button" value="false" id="q4false" class="btn-sm">False</button>
+                        <form>
+                            <input type="radio" name="yellow" id="q4true" value="true"> True<br>
+                            <input type="radio" name="yellow" id="q4false" value="false"> False<br>
+                          </form> 
                     </p>
                 </div>
             </div>
@@ -81,7 +89,7 @@
 
         <!-- Wins and Losses -->
 
-        <div class="row">
+        <div class="row results">
             <div class="col-md-12">
                 <p>Correct answers:
                     <span id="correct"></span>
