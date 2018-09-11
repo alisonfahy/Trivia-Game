@@ -42,7 +42,7 @@ var game = {
 
   correct: 0,
   incorrect: 0,
-  counter: 120,
+  counter: 60,
 
   countdown: function() {
     game.counter--;
@@ -56,7 +56,7 @@ var game = {
   start: function() {
     timer = setInterval(game.countdown, 1000);
 
-    $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
+    $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>60</span> Seconds</h2>");
 
     $("#start").remove();
     $("#instructions").remove();
@@ -160,7 +160,7 @@ var game = {
     panel.append("<h3 id='correct'>Correct Answers: " + this.correct + "</h3>");
     panel.append("<h3 id='incorrect'>Incorrect Answers: " + this.incorrect + "</h3>");
     panel.append("<h3 id='unanswered'>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
-    panel.append("<button id='playAgain'>Play Again</button>");
+    // panel.append("<button id='playAgain'>Play Again</button>");
   }
 };
 
@@ -175,11 +175,11 @@ $(document).on("click", "#done", function() {
   game.done();
 });
 
-$(document).on("click", "#playAgain", function() {
-  $("#results").remove();
-  $("#playAgain").remove();
-  $("#correct").remove();
-  $("#incorrect").remove();
-  $("#unanswered").remove();
-  game.start();
-});
+// $(document).on("click", "#playAgain", function() {
+//   $("#results").remove();
+//   $("#playAgain").remove();
+//   $("#correct").remove();
+//   $("#incorrect").remove();
+//   $("#unanswered").remove();
+//   newGame.restart();
+// });
